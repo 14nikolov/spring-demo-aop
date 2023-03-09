@@ -1,0 +1,40 @@
+1. What does "@EnableAspectJAutoProxy" Annotation do in a Java Spring Container Configuration Class?
+
+	The @EnableAspectJAutoProxy annotation is used in a Java Spring container configuration
+	class to enable support for using AspectJ-based aspects in the Spring application context.
+
+	When this annotation is added to a Spring configuration class, Spring will create a proxy
+	that can intercept method invocations on Spring-managed beans. 
+	This proxy can then apply advice, which is code that executes before or after the method is called.
+
+	AspectJ-based aspects are a way to modularize cross-cutting concerns,
+	such as logging, security, and caching, that cut across multiple 
+	classes and methods in an application. 
+	By using aspects, you can keep the core business logic of your application 
+	separate from the cross-cutting concerns, making your code more modular and easier to maintain.
+
+	In summary, the @EnableAspectJAutoProxy annotation allows you to use 
+	AspectJ-based aspects in your Spring application, enabling you to modularize
+	cross-cutting concerns and keep your code more maintainable.
+	
+2. Explain it to a 10 year old
+
+	Imagine you have a big box of toys that you want to share with your friends. 
+	But before you share the toys, you want to make sure that your friends play with them safely and nicely.
+
+	So you decide to have a grown-up helper who will watch over the toys and make sure that
+	your friends are playing with them correctly. 
+	The helper will tell your friends what to do and what not to do,
+	and will even give them stickers as a reward for playing nicely.
+
+	In the same way, when we write programs in Java Spring, we want to make sure that
+	the different parts of the program work together nicely and safely. 
+	We can use a special helper called "AspectJ" that watches over the program and
+	makes sure that everything works as it should.
+
+	We use the @EnableAspectJAutoProxy code to tell the program that we want to use this helper. 
+	Then, the program will create a special kind of helper called a "proxy" that watches over
+	the different parts of the program and makes sure they work together correctly.
+
+	This helps us keep the program organized and easy to understand, 
+	just like having a grown-up helper makes it easier to share toys with friends.
